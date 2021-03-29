@@ -31,8 +31,29 @@ async function loadByBreed(breed) {
 
 //this function creates an empty html slideshow div
 function createSlideshow(images) {
+  let currentPosition = 0; //declaring this variable
+  clearInterval(timer)
+  clearTimeout(deleteFirstPhotoDelay);
+
   document.getElementById("slideshow").innerHTML =`
  <div class="slide" style="background-image: url('${images[0]}')"> </div>
+ <div class="slide" style="background-image: url('${images[1]}')"> </div>
 `
+currentPosition += 2;
+setInterval(nextSlide, 3000)
+
+function nextSlide (){
+  
+  }
 }
+ 
+    
+  
+
+ 
+
+ 
+   
+ 
+
     

@@ -29,6 +29,7 @@ body {
     flex:1;
     background-color: #333;
     position:relative;
+    overflow: hidden;
 }
 
 .slide{
@@ -39,6 +40,15 @@ body {
     right: 0;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:center center;
+    background-position:center center;/*to center an elem. horiz-y & vertic-y*/
+    opacity: 0;
+    transform: scale(1);
+    transition: all .9s ease-out;
+
+}
+
+.slide:nth-last-child(2){
+    opacity: 1;
+    transform: scale(1.08);
 }
 
